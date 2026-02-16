@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leezai | Making the world happen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .bg-glow {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(99,102,241,0.15) 0%, rgba(0,0,0,0) 70%);
+            border-radius: 50%;
+            z-index: -1;
+            top: -200px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #a5b4fc 0%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-neutral-950 text-neutral-50 antialiased overflow-x-hidden relative">
+
+    <div class="bg-glow"></div>
+
+    <nav class="flex items-center justify-between px-6 py-6 max-w-7xl mx-auto relative z-10">
+        <a href="/" class="flex items-center">
+            <svg width="160" height="40" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="30" r="5" fill="#818cf8" />
+                <circle cx="45" cy="15" r="5" fill="#c084fc" />
+                <circle cx="70" cy="30" r="5" fill="#6366f1" />
+                <path d="M20 30 L45 15 L70 30" stroke="#818cf8" stroke-width="2" fill="none" />
+                <text x="85" y="42" font-family="'Inter', sans-serif" font-weight="800" font-size="34" fill="#ffffff" letter-spacing="-1">Leezai</text>
+            </svg>
+        </a>
+        
+        <div class="hidden md:flex space-x-8 text-sm font-medium text-neutral-400">
+            <a href="#" class="hover:text-white transition">Product</a>
+            <a href="#" class="hover:text-white transition">Engine</a>
+            <a href="#" class="hover:text-white transition">About</a>
+        </div>
+        
+        <div class="flex items-center space-x-4">
+            <a href="mailto:contact@leezai.cloud" class="hidden md:inline-block text-sm font-medium text-neutral-300 hover:text-white transition px-4 py-2 border border-neutral-800 rounded-full hover:bg-neutral-900">
+                Contact Us
+            </a>
+            <button class="bg-indigo-600 text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-indigo-500 shadow-[0_0_15px_rgba(79,70,229,0.5)] transition">
+                Early Access
+            </button>
+        </div>
+    </nav>
+
+    <header class="max-w-5xl mx-auto px-6 py-32 text-center relative z-10">
+        <div class="inline-flex items-center space-x-2 bg-neutral-900 border border-neutral-800 rounded-full px-4 py-1.5 mb-8">
+            <span class="flex h-2 w-2 rounded-full bg-indigo-500 animate-pulse"></span>
+            <span class="text-xs font-medium text-neutral-300">Leezai Flow v1.0 is now in private beta</span>
+        </div>
+        
+        <h1 class="text-6xl md:text-8xl font-extrabold tracking-tighter mb-8 leading-tight">
+            Making the <br /> <span class="text-gradient">world happen.</span>
+        </h1>
+        
+        <p class="text-lg md:text-xl text-neutral-400 max-w-2xl mx-auto mb-12 leading-relaxed">
+            The world is full of planners. We built the engine for the doers. 
+            Leezai bridges the friction gap between an idea and its manifestation.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row justify-center gap-4 max-w-md mx-auto">
+            <input type="email" placeholder="name@company.com" class="px-6 py-3.5 rounded-xl bg-neutral-900 border border-neutral-800 w-full focus:ring-2 focus:ring-indigo-500 outline-none text-white placeholder-neutral-500 transition">
+            <button class="bg-white text-black px-8 py-3.5 rounded-xl font-bold hover:bg-neutral-200 transition whitespace-nowrap">
+                Initialize
+            </button>
+        </div>
+    </header>
+
+    <section class="max-w-7xl mx-auto px-6 py-24">
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="glass-card p-10 rounded-3xl md:col-span-2 relative overflow-hidden group">
+                <div class="absolute inset-0 bg-gradient-to-br from-indigo-500/10 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                <h3 class="text-2xl font-bold mb-3">Predictive Execution</h3>
+                <p class="text-neutral-400 max-w-md">Our orchestration layer anticipates bottlenecks and automatically re-routes resources before momentum stalls.</p>
+            </div>
+            
+            <div class="glass-card p-10 rounded-3xl relative overflow-hidden group">
+                <div class="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                <h3 class="text-2xl font-bold mb-3">Zero-Config API</h3>
+                <p class="text-neutral-400">Plug natively into your existing hardware and software stacks in minutes.</p>
+            </div>
+            
+            <div class="glass-card p-10 rounded-3xl relative overflow-hidden group">
+                <div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                <h3 class="text-2xl font-bold mb-3">Infinite Scaling</h3>
+                <p class="text-neutral-400">Built to handle everything from local logistics to global enterprise supply chains.</p>
+            </div>
+
+            <div class="glass-card p-10 rounded-3xl md:col-span-2 flex items-center justify-between relative overflow-hidden">
+                <div>
+                    <h3 class="text-2xl font-bold mb-2">Ready to automate the "how"?</h3>
+                    <p class="text-neutral-400">Stop planning. Start happening.</p>
+                </div>
+                <a href="mailto:contact@leezai.cloud" class="bg-indigo-600 hover:bg-indigo-500 text-white px-6 py-3 rounded-xl font-semibold transition z-10">
+                    Email our Team
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-neutral-900 py-12 mt-12">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between text-neutral-500 text-sm">
+            <div class="flex items-center space-x-2 mb-4 md:mb-0">
+                <span>&copy; 2026 Leezai Inc.</span>
+                <span>&bull;</span>
+                <span>Built for the doers.</span>
+            </div>
+            <div class="flex space-x-6">
+                <a href="mailto:contact@leezai.cloud" class="hover:text-white transition">contact@leezai.cloud</a>
+                <a href="#" class="hover:text-white transition">Twitter / X</a>
+                <a href="#" class="hover:text-white transition">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
